@@ -27,7 +27,7 @@ Prototype internal nightlight shadows:
 
 ![Internal Component Shadows](images/intenal%20component%20shadows.jpg)
 
-# Thoughts and Possible Refinements
+# Building Version 2!
 
 Version 2 looks no different on the outside but it's another brand and has some subtle internal differences... really nothing of note. However, I decided to change the ESP module from a Wemos D1 Mini ESP32 to an Adafruit QT py ESP32-S2 which is so small it fits on the tip of your finger:
 
