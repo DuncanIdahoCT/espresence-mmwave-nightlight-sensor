@@ -118,4 +118,4 @@ Then it occured to me that since I needed a nightlight, maybe I could find one t
    ```
 # Comments are welcome
 
-This is my first GitHub repo/project so I apologize if it's a bit chaotic.
+I've only created a few projects here now, so I'm happy to hear any suggestions.
