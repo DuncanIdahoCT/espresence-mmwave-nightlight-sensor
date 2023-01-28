@@ -3,6 +3,8 @@ Making a hidden mmWave presence sensor that looks like it belongs in a nice bath
 
 ![mmWave Nightlight Sensor](/static/images/finished%20product.jpg)
 
+Assemnbly notes and images can be found here [here](static/project.md)!
+
 # A bit of back-story...
 
 When I first discovered the magic of mmWave presence sensors for home automation, I started tinkering with the help of various build guides and ESPHome yaml code examples and came up with this:
@@ -26,8 +28,6 @@ So I set out to find something else, my next idea was to look for a smart outlet
 
 Then it occured to me that since I needed a nightlight, maybe I could find one that also had USB so I could use the internal power supply that would include, and what I stumbled on was perfect! A nightlight, and outlet extender... which I wasn't even counting on, plus USB. Additionally it was nice and big with a roomy night light difusser/lens and only screwed together so taking it apart to modify didn't involve breaking plastic or trying to crack the glue so I ordered one and started to tinker.
 
-Assemnbly notes and images can be found here [here](static/project.md)!
-
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
 
@@ -40,7 +40,7 @@ Assemnbly notes and images can be found here [here](static/project.md)!
  * In Home Assistant add-on, click ESPHome>open web gui and create a new device chosing the "continue" option and give it a name such as:
 
    ```
-   espresence-office-multi-sensor
+   espresence-mmwave-bathroom
    ```
 
 * Click next and chose the type of ESP module you used in your build, this isn't a critical thing to have match but as long as it's some kind of ESP32 you can just select that for now and click next.
