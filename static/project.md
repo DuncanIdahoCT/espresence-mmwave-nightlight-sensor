@@ -19,6 +19,7 @@ For the prototype I tapped into the 5v right at the USB header which might have 
 The prototype was fine, I'm still using it in a hallway but I did learn a few things and make improvements in my design:
 
 * Use good wire! I've mentioned this before, I found the super thin cheap wires I started using to be quite difficult to silver and almost impossible to get solder to flow over/into the stranded wires. But fast-forward to Version 2 and I used some nicer all copper wire and it was super easy!
+* In version 2 I tapped into the 5v on the main outlet extender circuit board where the solder joints were very heavy and easy to work with as long as you have a good iron that can make a large solder joint flow
 * One of the coolest things about this solution is that the nightlight still works! I don't know why that's so exciting to me lol, perhaps because originally I intended to repurpose, not add function to the nightlight I ordered to tinker with. But there was an issue with shadows being cast inside the nightlight from the electronics I added inside which I addressed (mostly) in the Version 2 model
 * You may need to angle your mmWave sensor depending on where in a room you have an outlet to use with this solution. For this reason, and to reduce the internal shadows, I changed how I mounted the electronics so that I could angle it in any direction and still keep the face of the sensor mostly flat and out of the light beam when the nightlight was active so less or no shadows.
 
