@@ -3,7 +3,9 @@ Making a hidden mmWave presence sensor that looks like it belongs in a nice bath
 
 ![mmWave Nightlight Sensor](/static/images/finished%20product.jpg)
 
-Just like the Everything Presence One, my DIY version has an mmWave sensor, a PIR motion sensor, light illuminance, and a combo temperature/humidity sensor. Similarly it's added into Home Assistant by using the ESPHome add-on.
+When I first discovered the magic of mmWave presence sensors for home automation, I started tinkering with the help of various build guides and ESPHome yaml code examples and came up with this:
+
+![mmWave basic sensor with enclosure](/static/images/small%20sensor%20enclosure.jpg)
 
 While the code file: espresence-multi-sensor.yaml basically gives you all the connection and pinout info needed bring this project to life... some assemnbly notes and images can be found here [here](static/project.md)!
 
