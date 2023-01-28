@@ -7,7 +7,10 @@ When I first discovered the magic of mmWave presence sensors for home automation
 
 ![mmWave basic sensor with enclosure](/static/images/small%20sensor%20enclosure.jpg)
 
-While the code file: espresence-multi-sensor.yaml basically gives you all the connection and pinout info needed bring this project to life... some assemnbly notes and images can be found here [here](static/project.md)!
+These work great in not obvious locations such as atop appliances or cabinets:
+
+![sensor placement 1](/static/images/sensor%20placement%201.jpg)
+![sensor placement 2](/static/images/sensor%20placement%202.jpg)
 
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
