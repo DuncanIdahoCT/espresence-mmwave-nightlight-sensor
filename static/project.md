@@ -37,3 +37,5 @@ I used breakaway header pins and removed the plastic so I could make the ESP and
 And instead of drilling holes and using the pins going through the reflector to hold things in place, I cut out an area of the reflector entirely and used hot-glue to afix the componets which maybe doesn't look quite as clean internally but it has several advantages such as being able to sink the ESP and mmWave into the unit further so there is virtually no shadowing when the nightlight is active. Also with the small overall sensor package and the magic of hot-glue ;) angling the mmWave sensor pad toward the best area of any space is super easy:
 
 ![version 2 internals 2](images/version%202%20internals%202.jpg)
+
+It should be noted that the code and instructions in the main readme.md are for version 2 and specific to the Adafruit ESP32-S2 but this could easily be adapted to anything else you can make work with the mmWave and that you can stuff inside this thing :)
