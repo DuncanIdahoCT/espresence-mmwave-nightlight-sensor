@@ -28,7 +28,10 @@ So I set out to find something else, my next idea was to look for a smart outlet
 
 Then it occured to me that since I needed a nightlight, maybe I could find one that also had USB so I could use the internal power supply that would include, and what I stumbled on was perfect! A nightlight, and outlet extender... which I wasn't even counting on, plus USB. Additionally it was nice and big with a roomy night light difusser/lens and only screwed together so taking it apart to modify didn't involve breaking plastic or trying to crack the glue so I ordered one and started to tinker.
 
+# The Finished Product
 
+![finished product 2](/static/images/finished%20product%202.jpg)
+![finished product 3](/static/images/finished%20product%203.jpg)
 
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
