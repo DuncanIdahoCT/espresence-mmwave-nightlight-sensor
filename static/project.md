@@ -14,14 +14,20 @@ For the prototype I tapped into the 5v right at the USB header which might have 
 
 ![prototype internals 5](images/prototype%20internals%205.jpg)
 
-# Refinements and Building Version 2!
+# Thoughts and Possible Refinements
 
 The prototype was fine, I'm still using it in a hallway but I did learn a few things and make improvements in my design:
 
 * Use good wire! I've mentioned this before, I found the super thin cheap wires I started using to be quite difficult to silver and almost impossible to get solder to flow over/into the stranded wires. But fast-forward to Version 2 and I used some nicer all copper wire and it was super easy!
 * In version 2 I tapped into the 5v on the main outlet extender circuit board where the solder joints were very heavy and easy to work with as long as you have a good iron that can make a large solder joint flow
 * One of the coolest things about this solution is that the nightlight still works! I don't know why that's so exciting to me lol, perhaps because originally I intended to repurpose, not add function to the nightlight I ordered to tinker with. But there was an issue with shadows being cast inside the nightlight from the electronics I added inside which I addressed (mostly) in the Version 2 model
-* You may need to angle your mmWave sensor depending on where in a room you have an outlet to use with this solution. For this reason, and to reduce the internal shadows, I changed how I mounted the electronics so that I could angle it in any direction and still keep the face of the sensor mostly flat and out of the light beam when the nightlight was active so less or no shadows.
+* You may need to angle your mmWave sensor depending on where in a room you have an outlet to use with this solution. For this reason, and to reduce the internal shadows, I changed how I mounted the electronics so that I could angle it in any direction and still keep the face of the sensor mostly flat and out of the light beam when the nightlight was active so less or no shadows
+
+Prototype internal nightlight shadows:
+
+![Internal Component Shadows](images/intenal%20component%20shadows.jpg)
+
+# Thoughts and Possible Refinements
 
 Version 2 looks no different on the outside but it's another brand and has some subtle internal differences... really nothing of note. However, I decided to change the ESP module from a Wemos D1 Mini ESP32 to an Adafruit QT py ESP32-S2 which is so small it fits on the tip of your finger:
 
