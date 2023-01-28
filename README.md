@@ -83,7 +83,7 @@ Then it occurred to me that since I needed a nightlight, maybe I could find one 
    captive_portal:
    ```
 
-* The esisest way to proceed is to copy all the code above out to notepad++ or your favorite editor and then paste back in the entire code from:
+* The easiest way to proceed is to copy all the code above out to notepad++ or your favorite editor and then paste back in the entire code from:
    ```
    espresence-mmwave-nightlight-sensor.yaml
    ```
