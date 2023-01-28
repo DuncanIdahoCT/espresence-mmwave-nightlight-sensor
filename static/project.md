@@ -1,13 +1,44 @@
-# Project Start
+# Opening up and modifying the first model I got from Amazon
 
-I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
+As mentioned, the unit is simply screwed together and inside its quite spacious so adding the ESP8266 and mmWave sensor was easy. I used the stacked header pins as the method of attachment and sandwitched the internal nightlight reflector between them:
 
-![Breadboard Beginnings](images/breadboard-beginnings.jpg)
+![prototype internals 1](/static/images/prototype%20internals%202.jpg)
+![prototype internals 1](/static/images/prototype%20internals%203.jpg)
+![prototype internals 1](/static/images/prototype%20internals%204.jpg)
 
-# Adopt/Install/or otherwise... Get Your ESP into ESPHome
+This worked well for my prototype except for one minor issue which was a single tall capacitor was obstructing things when I tried to reassemble so I simple de-soldered it and replaced it laid over using some angled breakaway header pins, no sweat:
 
-Now that my ESP32 had pins and wasn't dangling on the end of a hanging USB cable, I did the install of the code, this isn't too difficult and there are many guides and several ways to do this using ESPHome either inside HA as an add-on, or by installing the tools on your PC. You may need to install a com port driver which is available on the esphome.io website my pc alread had these drivers as I had used some other random USB-COM port device and many of them share the same chipset.
+![laying over a cap](/static/images/laying%20over%20a%20cap.jpg)
 
-# Connecting sensors...
+For the prototype I tapped into the 5v right at the USB header which might have seemed obvious but wasn't the easiest place to work and the garbage wire I used made it even more annoying but after some swearing, I got it done:
 
-The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
+![prototype internals 1](/static/images/prototype%20internals%205.jpg)
+
+
+These work great in not obvious locations such as atop appliances or cabinets:
+
+![sensor placement 1](/static/images/sensor%20placement%201.jpg)
+![sensor placement 2](/static/images/sensor%20placement%202.jpg)
+
+So my first thought was to take what I already had working well and adapt it to a bathroom which is probably the most difficult room for most people who are looking to add presence sensors. I considered many options but none would work well or have even the most remote chance of being approved by my wife :) so I came up with what I personally thought was a fine idea:
+
+
+
+
+# Installation:
+ * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
+
+   ```
+   header/leapmmw_sensor.h
+   
+   packages/leapmmw_sensor.yml
+   ```
+ 
+ * In Home Assistant add-on, click ESPHome>open web gui and create a new device chosing the "continue" option and give it a name such as:
+
+   ```
+   espresence-office-multi-sensor
+   ```
+
+* Click next and chose the type of ESP module you used in your build, this isn't a critical thing to have match but as long as it's some kind of ESP32 you can just select that for now and click next.
+* You'll see a new card appear in the background for your ESP device, this is just an empty shell with only basic initilization code so far... click skip because you don't want to install this basic code to the ESP quite yet.
