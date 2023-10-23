@@ -45,4 +45,6 @@ And instead of drilling holes and using the pins going through the reflector to 
 
 ![version 2 internals 2](images/version%202%20internals%202.jpg)
 
+UPDATE: I would not recommend common hot-glue as the slightly warm temperature of the ESP/mmWave (I've noticed) has made the glue come loose. I'm sure another glue could be used that is safe for direct contact with microelectronics and safe at higher temps...
+
 It should be noted that the code and instructions in the main readme.md are for version 2 and specific to the Adafruit ESP32-S2 but this could easily be adapted to anything else you can make work with the mmWave and that you can stuff inside this thing :)
